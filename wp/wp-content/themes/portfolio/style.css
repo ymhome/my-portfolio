@@ -1,14 +1,10 @@
 
 
-
-/* 自作 */
-
 /*
 Theme Name: portfolio
 Template: portfolio
 */
 
-/* ここにカスタムCSSを書く */
 
 
 * {
@@ -812,6 +808,38 @@ position: absolute;
 	margin-right: 5px;
   }
   
+
+  .skills__icon-item {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+
+.skills__icon-item::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%; /* アイコンの上に表示 */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 8px;
+  white-space: nowrap;
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+  margin-bottom: 6px;
+  z-index: 10;
+}
+
+.skills__icon-item:hover::after,
+.skills__icon-item:focus-within::after {
+  opacity: 1;
+  pointer-events: auto;
+}
+
   
   
   

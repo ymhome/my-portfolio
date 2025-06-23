@@ -114,8 +114,6 @@ get_header(); // ヘッダーの読み込み
         <p class="with">with</p>
         <p class="design">Design</p>
       </h2>
-      <p class="lead__text">コードとデザインの両方を駆使して、機能性と美しさを兼ね備えたWebサイトを制作しています。<br>
-        ユーザーにとって使いやすく、視覚的にも印象的なデザインを目指し、細部にまでこだわった作品を提供します。</p>
     </div>
   </section>
 
